@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="http://ant.design">
+    <img width="200" src="http://121.89.196.17:5000/react-ring-chart.jpg">
+  </a>
+</p>
+
 # react-ring-chart
 a ring-chart based on svg and react
 
@@ -6,12 +12,12 @@ a ring-chart based on svg and react
 #### Params
 
 ```
-config
-|Key                   | Type     | Default            | Description |
-| -------------------- | -------  | ---- ------------- |
-|width                 | number   | 300                |                   |
-|gap                   | number   | 10                 |     
-|titleFontSize         | string   | 14                 |    
+
+|Key                   | Type     | Default            | Description        |
+| -------------------- | -------  | ---- ------------- |                    |
+|width                 | number   | 300                |                    |
+|gap                   | number   | 10                 |                    |
+|titleFontSize         | string   | 14                 |                    |
 |percentageFontSize    | string   | 24                 |                    |
 |innerBgDefault        | string   | #cbcbcb            |                    |
 |outerBgDefault        | string   | #e8e8e8            |                    |
@@ -26,7 +32,7 @@ config
 |                           imgUrl:string,
 |                           text:string,
 |                           fontSize:string,
-|                           textFill:string            |                  |                    |
+|                           textFill:string                                                  
 |bottom                | object (same as top)
 |left                  | object (same as top)
 |right                 | object (same as top)
@@ -48,15 +54,16 @@ import RingChart from "react-ring-chart";
 ```
 #### Demo
 ```javascript
-    mkdir react-ring-chart
-    cd react-ring-chart
+    mkdir test
+    cd test
     npm i react-ring-chart
+    cd react-ring-chart
     npm i
     npm run start
 ```    
 
 #### Note
-```
+
     make sure that '@babel/plugin-proposal-class-properties' and 'babel-preset-react-app' are in your devDependencies.
     if you use 'creat-react-app',do the follow steps below:
         1. {
@@ -72,9 +79,9 @@ import RingChart from "react-ring-chart";
                               require.resolve('babel-preset-react-app/dependencies'),
                               { helpers: true },
                             ],
-                        +     ***[ "react-app"]***
+                        +     [ "react-app"]
                           ],
-                        +  ***plugins:[ ['@babel/plugin-proposal-class-properties',{'loose':true}]],***
+                        +  plugins:[ ['@babel/plugin-proposal-class-properties',{'loose':true}]],
                           cacheDirectory: true,
                           // See #6846 for context on why cacheCompression is disabled
                           cacheCompression: false,
@@ -85,7 +92,7 @@ import RingChart from "react-ring-chart";
                           sourceMaps: shouldUseSourceMap,
                           inputSourceMap: shouldUseSourceMap,
              },
-        2.
+      
     
     
         
