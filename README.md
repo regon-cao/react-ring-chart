@@ -7,8 +7,8 @@ a ring-chart based on svg and react
 
 ```
 config
-|Key | Type | Default| Description |
-| --- | --- | ---- ----------- |
+|Key                   | Type     | Default            | Description |
+| -------------------- | -------  | ---- ------------- |
 |width                 | number   | 300                |                   |
 |gap                   | number   | 10                 |     
 |titleFontSize         | string   | 14                 |    
@@ -21,11 +21,12 @@ config
 |titleFill             | string   | #aaa               |                    |
 |percentageFill        | string   | #24bcb4            |                    |
 |percentage            | number   | 0                  |                    |
-|top                   | object {active:bool,
-|                         imgUrl:string,
-|                         text:string,
-|                         fontSize:string,
-|                         textFill:string}  |                  |                    |
+|top                   | object 
+|                           active:bool,
+|                           imgUrl:string,
+|                           text:string,
+|                           fontSize:string,
+|                           textFill:string            |                  |                    |
 |bottom                | object (same as top)
 |left                  | object (same as top)
 |right                 | object (same as top)
@@ -44,3 +45,9 @@ config
       <RingChart config = {config}/>
     
 ```
+#### Demo
+    ```npm install react-ring-chart
+    
+        npm run start
+    ```    
+        
